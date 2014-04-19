@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	/* print intro */
 	fprintf(stdout, "--------------------------------------------------------------------\n");
 	fprintf(stdout, "sisyphos - chess problem solver\n");
-	fprintf(stdout, "Copyright (C) 2004-2006  Philipp Roebrock (philipp.roebrock@gmx.net)\n");
+	fprintf(stdout, "Copyright (C) 2004-2014  Philipp Roebrock (philipp.roebrock@gmx.net)\n");
 	fprintf(stdout, "--------------------------------------------------------------------\n");
 
 	/* initializisation */
