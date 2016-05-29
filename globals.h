@@ -94,7 +94,7 @@ extern void check_bitoperations();
 */
 
 /* common implementation, should work on all architectures */
-#if !defined(__i386__) && !defined(__amd64__)
+#if !defined(__i386__) && !defined(__amd64__) && !defined(__arm__)
 
 #define GETNEXTBIT(MASK, POS)						\
 	for (POS = 0; !TESTBIT((MASK), (POS)); (POS)++);
@@ -126,6 +126,17 @@ extern void check_bitoperations();
 		__asm__ __volatile__ ("bsfq %%rax,%%rax" : "=a" (POS) : "a" (MASK));
 
 #endif	/* ARCH_AMD64 */
+
+
+
+#ifdef __arm__
+
+#define GETNEXTBIT(MASK, POS)						\
+		__asm__ __volatile ("clz %0, %1" : "=&r" (POS) : "r" (MASK));	\
+		(POS) = 64 - 1 - (POS);
+
+#endif /* ARCH_ARM */
+
 
 
 
