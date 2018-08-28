@@ -96,6 +96,7 @@ extern void check_bitoperations();
 /* common implementation, should work on all architectures */
 #if !defined(__i386__) && !defined(__amd64__) && !defined(__arm__)
 
+#warning "No specialized version of GETNEXTBIT, performance suboptimal."
 #define GETNEXTBIT(MASK, POS)						\
 	for (POS = 0; !TESTBIT((MASK), (POS)); (POS)++);
 
