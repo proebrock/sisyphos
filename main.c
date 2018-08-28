@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 	position_readfen(&(problem.pos), "8/8/8/8/8/K7/N6B/k7 w - - 0 1");								/*  16 9  39.3MN */
 	position_readfen(&(problem.pos), "8/8/5pp1/5k2/8/4QK2/8/8 w - - 0 1");							/*  61 9   3.7GN */
 	position_readfen(&(problem.pos), "8/8/7R/3k2B1/8/3K4/4P3/8 w - - 0 1");							/*  62 9   6.3GN */
-	position_readfen(&(problem.pos), "8/8/4Q3/8/8/8/4p1r1/4K1kb w - - 0 1");						/* 174 9   much! */
+	position_readfen(&(problem.pos), "8/8/4Q3/8/8/8/4p1r1/4K1kb w - - 0 1");						/* 174 9 317.7GN */
 	position_readfen(&(problem.pos), "8/8/8/8/8/1p5p/b2Q3K/1k1B4 w - - 0 1");						/* 175 9  33.2GN */
 	position_readfen(&(problem.pos), "8/1P6/2k4N/2N5/P1K5/8/8/8 w - - 0 1");						/* 176 9   1.5GN */
 	position_readfen(&(problem.pos), "8/8/8/7Q/2k4p/4P3/P6K/2N5 w - - 0 1");						/* 339 9   7.7GN */
